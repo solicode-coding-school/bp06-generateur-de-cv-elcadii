@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <article class="general">
+      <div class="art1">
+        <h1>get your dream job</h1>
+        <!-- _-----------------------------------------personal inputs form --------------------------------->
+        <form id="form">
+          <h4><label for="imgInput">image :</label></h4>
+          <input
+            id="imgInput"
+            type="file"
+            accept="image/*"
+            placeholder="add image"
+          />
+          <span class="formError" id="imageError"></span>
+
+          <h4><label for="firstNameInput">first name :</label></h4>
+          <input
+            id="firstNameInput"
+            type="text"
+            placeholder="enter first name"
+          />
+          <span class="formError" id="firsNameError"></span>
+
+          <h4><label for="lastNameInput">last name :</label></h4>
+          <input id="lastNameInput" type="text" placeholder="enter last name" />
+          <span class="formError" id="lastNameError"></span>
+
+          <h4><label for="ageInput">age :</label></h4>
+          <input id="ageInput" type="number" placeholder="enter your age" />
+          <span class="formError" id="ageError"></span>
+
+          <h4><label for="adressInput">address :</label></h4>
+          <input
+            id="adressInput"
+            type="text"
+            placeholder="enter your address"
+          />
+          <span class="formError" id="adressError"></span>
+
+          <h4><label for="phoneInput">phone number :</label></h4>
+          <input
+            id="phoneInput"
+            type="number"
+            placeholder="enter your phone number"
+          />
+          <span class="formError" id="phonenumberError"></span>
+        </form>
+
+        <!-- ----------------------------------------------------------education form---------------------------------------- -->
+        <section class="educationForm">
+          <form class="education">
+            <h4><label for="schoolInput">school :</label></h4>
+            <input
+              id="schoolInput"
+              type="text"
+              placeholder="enter your school"
+            />
+            <span class="schoolError"></span>
+
+            <h4><label for="checkinInput">check in date :</label></h4>
+            <input
+              id="checkinInput"
+              type="date"
+              placeholder="enter check in date"
+            />
+            <span class="schoolcheckinError"></span>
+
+            <h4><label for="checkoutInput">check out date :</label></h4>
+            <input
+              id="checkoutInput"
+              type="date"
+              placeholder="enter your check out date"
+            />
+            <span class="schoolcheckoutError"></span>
+          </form>
+
+          <!-- Add new form button -->
+          <button type="button" id="addEducationForm">
+            add new education form
+          </button>
+        </section>
+
+        <!-- -----------------------------------------------experience form----------------------------------- -->
+        <section class="experienceForm">
+          <form class="experience">
+            <h4><label for="experienceCompany">company :</label></h4>
+            <input
+              id="experienceCompany"
+              type="text"
+              placeholder="where did you gain experience?"
+            />
+            <span class="experienceError"></span>
+
+            <h4><label for="experienceCheckinInput">check in date :</label></h4>
+            <input
+              id="experienceCheckinInput"
+              type="date"
+              placeholder="enter check in date"
+            />
+            <span class="experienceCheckinError"></span>
+
+            <h4>
+              <label for="experienceCheckoutInput">check out date :</label>
+            </h4>
+            <input
+              id="experienceCheckoutInput"
+              type="date"
+              placeholder="enter check out date"
+            />
+            <span class="experienceCheckoutError"></span>
+          </form>
+
+          <!-- Add new experience form button -->
+          <button type="button" id="addExperienceForm">
+            add new experience form
+          </button>
+        </section>
+
+        <button id="generateCVBtn">generate CV</button>
+      </div>
+    </article>
+    <script src="script.js"></script>
+  </body>
+</html>
