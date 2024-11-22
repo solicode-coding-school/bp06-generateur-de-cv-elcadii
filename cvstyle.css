@@ -1,0 +1,131 @@
+/* .cvartical{
+    text-align: center;
+    align-items: center;
+} */
+.cvFormulle {
+  width: 70%;
+  margin: 20px auto;
+  /* background-color: rgb(186, 186, 186); */
+}
+.personnaleInfo {
+  display: flex;
+  background-color: rgb(213, 217, 217);
+  width: 100%;
+  height: 170px;
+  border-bottom: 2px solid;
+  text-align: left;
+}
+.contactAndProfetionnelInformation {
+  display: flex;
+}
+.contactInformation {
+  background-color: rgb(166, 163, 167);
+  width: 30%;
+  border-right: 2px black solid;
+}
+
+.profetionnelInformation {
+  background-color: rgb(214, 211, 211);
+  width: 70%;
+  /* height: 110vh; */
+}
+.personnaleInfo .cvImg {
+  width: 20%;
+  height: 90%;
+  border-radius: 50%;
+  margin: 10px 10px 10px 8%;
+}
+.nameandjob {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.nameandjob h1 {
+  color: blueviolet;
+  margin: 5px 20px;
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.nameandjob h1 span {
+  display: inline-flex;
+}
+.nameandjob h2 {
+  font-size: 25px;
+  margin: 8px 50px;
+  color: rgb(31, 30, 30);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contactAndProfetionnelInformation .contactInformation h1 {
+  background-color: rgb(91, 91, 92);
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: azure;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.contactAndProfetionnelInformation .contactInformation h2 {
+  text-align: left;
+  padding: 10px;
+}
+.contactAndProfetionnelInformation .contactInformation h2 span {
+  padding-left: 20px;
+  color: #1600a7;
+}
+
+.contactAndProfetionnelInformation .profetionnelInformation h1 {
+  background-color: rgb(6, 6, 194);
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: azure;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.contactAndProfetionnelInformation .profetionnelInformation .cvaboutsection h2,
+.contactAndProfetionnelInformation
+  .profetionnelInformation
+  .educationsection
+  h2,
+.contactAndProfetionnelInformation .profetionnelInformation .experienceCv h2 {
+  background-color: rgb(91, 91, 92);
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: azure;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.contactAndProfetionnelInformation .profetionnelInformation .cvaboutsection p,
+.contactAndProfetionnelInformation .profetionnelInformation .educationsection p,
+.contactAndProfetionnelInformation .profetionnelInformation .experienceCv p {
+  text-align: left;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.contactAndProfetionnelInformation
+  .profetionnelInformation
+  .cvaboutsection
+  p
+  span,
+.contactAndProfetionnelInformation
+  .profetionnelInformation
+  .educationsection
+  p
+  span,
+.contactAndProfetionnelInformation
+  .profetionnelInformation
+  .experienceCv
+  p
+  span {
+  color: rgb(61, 11, 160);
+  padding: 10px;
+  font-weight: bold;
+  display: inline-flex;
+}

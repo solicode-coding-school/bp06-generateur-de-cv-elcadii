@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cvstyle.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   </head>
   <body>
     <article class="general">
       <div class="art1">
-        <h1>get your dream job</h1>
+        <h1>get your dream jo by perfect cv</h1>
         <!-- _-----------------------------------------personal inputs form --------------------------------->
         <form id="form">
           <h4><label for="imgInput">image :</label></h4>
@@ -32,6 +35,14 @@
           <input id="lastNameInput" type="text" placeholder="enter last name" />
           <span class="formError" id="lastNameError"></span>
 
+          <h4><label for="jobeTitelInput">jobeTitel :</label></h4>
+          <input
+            id="jobeTitelInput"
+            type="text"
+            placeholder="enter your job domen titel"
+          />
+          <span class="formError" id="jobeTiteError"></span>
+
           <h4><label for="ageInput">age :</label></h4>
           <input id="ageInput" type="number" placeholder="enter your age" />
           <span class="formError" id="ageError"></span>
@@ -44,6 +55,10 @@
           />
           <span class="formError" id="adressError"></span>
 
+          <h4><label for="emailInput">email :</label></h4>
+          <input id="emailInput" type="email" placeholder="enter your email" />
+          <span class="formError" id="emailError"></span>
+
           <h4><label for="phoneInput">phone number :</label></h4>
           <input
             id="phoneInput"
@@ -51,7 +66,16 @@
             placeholder="enter your phone number"
           />
           <span class="formError" id="phonenumberError"></span>
+
+          <h4><label for="aboutInput">about you :</label></h4>
+          <input
+            id="aboutInput"
+            type="text"
+            placeholder="enter a small description about you "
+          />
+          <span class="formError" id="abutError"></span>
         </form>
+        <div class="separation"></div>
 
         <!-- ----------------------------------------------------------education form---------------------------------------- -->
         <section class="educationForm">
@@ -125,6 +149,97 @@
 
         <button id="generateCVBtn">generate CV</button>
       </div>
+    </article>
+    <article class="CVartical">
+      <main class="cvFormulle">
+        <div class="personnaleInfo">
+          <!-- -------------------here i wiil add imag and full  name  and job titel------------------- -->
+
+          <img class="cvImg" id="cvImgProfel" src="" alt="" />
+          <div class="nameandjob">
+            <h1 id="fullName">
+              <!-- here i will add full name from inputs -->
+              <span id="cvfirstname"></span>
+              <span id="cvlastname"></span>
+            </h1>
+            <h2 id="cv_jobeTitel"></h2>
+          </div>
+        </div>
+
+        <!-- ___________________________________________________________________________ -->
+
+        <section class="contactAndProfetionnelInformation">
+          <div class="contactInformation">
+            <!-- ----------------------------------contact informmation------------------------- -->
+            <h1>personal Information</h1>
+            <!-- <h2 class="cvfirstname">
+              first name : <span id="cvfirstname">mohammad</span>
+            </h2>
+
+            <h2 class="cvlastname">
+              lastst name : <span id="cvlastname"></span>
+            </h2> -->
+
+            <h2 class="cvAge">age : <span id="cvAge"></span></h2>
+
+            <h2 class="cvadress">adress : <span id="cvadress"></span></h2>
+
+            <h2 class="cvemail">eamil : <span id="cvemail"></span></h2>
+
+            <h2 class="cvphoneNumber">
+              phone number : <span id="cvphonNumber"></span>
+            </h2>
+          </div>
+
+          <div class="profetionnelInformation">
+            <!-- ----------------------------------profetionnel Informmayion------------------------ -->
+            <h1>proficionnel information :</h1>
+            <div class="cvaboutsection">
+              <h2>about me :</h2>
+              <p>
+                <span id="discriptionCV">
+                  <!--________________________________ here i will add decription from inputs --></span
+                >
+              </p>
+            </div>
+
+            <div class="educationsection">
+              <h2 class="h2education">school</h2>
+              <p>
+                school :<span id="cvSchool"> </span>
+                <!-- here i will ad school -->
+              </p>
+              <p>
+                check in :<span id="cvshcoolCHickin"> </span>
+                <!-- here i will ad school check in -->
+              </p>
+              <p>
+                check out :<span id="cvschoolCHickout"> </span>
+                <!-- here i will ad school check out -->
+              </p>
+            </div>
+
+            <div class="experienceCv">
+              <h2 class="h2experence">experence :</h2>
+              <p>
+                experience:<span id="cvexperence"></span>
+                <!-- here i will ad school -->
+              </p>
+
+              <p>
+                from :<span id="cvexperenceCHickin"></span>
+                <!-- here i will ad school -->
+              </p>
+
+              <p>
+                from :<span id="cvexperenceCHickout"></span>
+                <!-- here i will ad school -->
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <button id="dowload">dowload</button>
     </article>
     <script src="script.js"></script>
   </body>
